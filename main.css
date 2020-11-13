@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #eee;
+}
+
+section {
+  width: 90%;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+section ul {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+section ul li {
+  list-style: none;
+  padding: 7px 15px;
+  margin: 5px 7px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+section ul li.active {
+  background-color: #0087ffbf;
+  color: #fff;
+}
+
+section .product {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section .product .itembox {
+  /* flex-basis: 24%; */
+
+  width: 275px;
+  height: 275px;
+  position: relative;
+  margin: 5px;
+}
+
+section .product .itembox img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
