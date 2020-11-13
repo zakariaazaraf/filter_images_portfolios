@@ -53,34 +53,6 @@
             integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
             crossorigin="anonymous">
     </script>
-
-    <!-- JAVASCRIPT CODE -->
-    <script>
-
-        $(document).ready(function(){
-
-            $('.list').click(function(){
-
-                const value = $(this).attr('data-filter');
-                
-                if(value === 'all'){
-
-                    $('.itembox').show('5000');
-
-                }else{
-
-                    $('.itembox').not("." + value).hide('5000');
-
-                    $('.itembox').filter("." + value).show('5000');
-
-                }
-
-                // Change class "active"
-                $(this).addClass('active').siblings().removeClass('active');
-                
-            });
-        });
-        
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
